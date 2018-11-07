@@ -11,7 +11,6 @@ public class BinaryValue
     {
         this.numberOfBits = numberOfBits;
         this.theBits = new byte[numberOfBits];
-
         Arrays.fill(this.theBits, (byte)0);
     }
 
@@ -20,25 +19,19 @@ public class BinaryValue
         String answer = "";
         for(int i = 0; i < this.theBits.length; i++)
         {
-            answer += theBits[i];
+            answer += this.theBits[i];
         }
-
         System.out.println(answer);
     }
 
     public BinaryValue(String bin)
     {
-//        this.numberOfBits = bin.length();
-//        this.theBits = new byte[this.numberOfBits];
-
+        //this.numberOfBits = bin.length();
+        //this.theBits = new byte[this.numberOfBits];
         this(bin.length());
-
-        for(int i = 0; i < this.theBits.length; i++)
+        for(int i = 0; i < bin.length(); i++)
         {
-            this.theBits[i] = bin.charAt(i) == '0'? (byte)0: (byte)1; //in-line if statement
+            this.theBits[i] = bin.charAt(i) == '0'? (byte)0:(byte)1;
         }
     }
-
-
-
 }

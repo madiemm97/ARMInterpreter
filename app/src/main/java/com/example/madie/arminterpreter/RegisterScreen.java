@@ -1,8 +1,10 @@
 package com.example.madie.arminterpreter;
+
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class RegisterScreen extends AppCompatActivity
 {
@@ -44,15 +46,43 @@ public class RegisterScreen extends AppCompatActivity
         this.theRegisterETs[28] = (EditText)this.findViewById(R.id.x28ET);
         this.theRegisterETs[29] = (EditText)this.findViewById(R.id.x29ET);
         this.theRegisterETs[30] = (EditText)this.findViewById(R.id.x30ET);
+
+        this.fillRegistersWithCurrentValues();
     }
+
+    private void fillRegistersWithCurrentValues()
+    {
+        for(int i = 0; i < ARMap.registers.length; i++)
+        {
+            this.theRegisterETs[i].setText("" + ARMap.registers[i].getValue());
+        }
+    }
+
+    /*
+    public void onBackPressed()
+    {
+        //globally save the current values of all the registers such that those values are
+        //accessible in MainActivity.  You should do something in MainActivity to prove this.
+        for(int i = 0; i < this.theRegisterETs.length; i++)
+        {
+            ARMap.registerValues[i] = Integer.parseInt(this.theRegisterETs[i].getText().toString());
+        }
+
+        Toast.makeText(this, "Saved...", Toast.LENGTH_SHORT).show();
+        super.onBackPressed();
+    }
+    */
 
     public void saveButtonPressed(View v)
     {
         //globally save the current values of all the registers such that those values are
         //accessible in MainActivity.  You should do something in MainActivity to prove this.
+        for(int i = 0; i < this.theRegisterETs.length; i++)
+        {
+            ARMap.registers[i].setValue(Integer.parseInt(this.theRegisterETs[i].getText().toString()));
+        }
 
-        MainActivity.saveButtonPressedMain(v);
-
-
+        Toast.makeText(this, "Saved...", Toast.LENGTH_SHORT).show();
+        this.onBackPressed();
     }
 }

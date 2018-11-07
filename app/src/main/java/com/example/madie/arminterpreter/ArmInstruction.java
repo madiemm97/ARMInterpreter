@@ -1,5 +1,6 @@
 package com.example.madie.arminterpreter;
 
+
 public class ArmInstruction
 {
     private BinaryValue instruction, destination, shifts, source2, source1;
