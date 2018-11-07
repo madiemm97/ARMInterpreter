@@ -53,6 +53,7 @@ public class MainActivity extends AppCompatActivity {
         if(zero.equals("A") && one.equals("D") && two.equals("D"))
         {
             int answer = X1.getValue() + X1.getValue();
+            X0.setValue(answer);
             Toast.makeText(this, "Your X0 result is: " + answer, Toast.LENGTH_SHORT).show();
         }
 
