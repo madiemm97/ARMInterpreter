@@ -12,7 +12,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    EditText instructionET;
+    private EditText instructionET;
 
 
     @Override
@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         ARMap.lookupInstruction("ADD").display();
         ARMap.init();
-
+        this.instructionET = (EditText) findViewById(R.id.instructionET);
     }
 
     public void registersButtonPressed(View v)
@@ -38,24 +38,10 @@ public class MainActivity extends AppCompatActivity {
         //For example, if instructionET contained: ADD X0, X1, X2
         //your code should grab the value from X1 and X2, add them together, and store the result in X0
 
-        instructionET = (EditText) findViewById(R.id.instructionET);
+        Instruction i = new Instruction(instructionET.getText().toString());
+        i.execute();
+        Toast.makeText(this, "Execution Complete", Toast.LENGTH_SHORT).show();
 
-        String instruction = instructionET.toString();
-
-        Register X0 = new Register("X0");
-        Register X1 = new Register("X1");
-        Register X2 = new Register("X2");
-
-        Character zero = instruction.charAt(0);
-        Character one = instruction.charAt(1);
-        Character two = instruction.charAt(2);
-
-        if(zero.equals("A") && one.equals("D") && two.equals("D"))
-        {
-            int answer = X1.getValue() + X1.getValue();
-            X0.setValue(answer);
-            Toast.makeText(this, "Your X0 result is: " + answer, Toast.LENGTH_SHORT).show();
-        }
 
 
     }

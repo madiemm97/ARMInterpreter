@@ -18,7 +18,8 @@
             android:ems="10"
             android:gravity="center"
             android:hint="Enter ARM Instruction"
-            android:inputType="textPersonName" />
+            android:inputType="textPersonName"
+            android:text="ADD X0, X1, X2" />
 
         <Button
             android:id="@+id/button4"

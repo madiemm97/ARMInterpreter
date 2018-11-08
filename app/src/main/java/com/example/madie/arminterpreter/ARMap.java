@@ -51,4 +51,17 @@ public class ARMap
         }
         return answer;
     }
+
+    public static Register findRegisterByName(String nameOfRegister)
+    {
+        for(Register r : ARMap.registers)
+        {
+            if(r.getHumanReadableName().equalsIgnoreCase(nameOfRegister))
+            {
+                return r;
+            }
+        }
+
+        return null;
+    }
 }
