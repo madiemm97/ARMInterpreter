@@ -27,22 +27,34 @@ public class Instruction
             Register destinationRegister = ARMap.findRegisterByName(this.destinationName);
             Register input2Register = ARMap.findRegisterByName(theInputNames.get(0));
             Register input1Register = ARMap.findRegisterByName(theInputNames.get(1));
-            destinationRegister.setValue(input2Register.getValue() + input2Register.getValue());
+            destinationRegister.setValue(input2Register.getValue() + input1Register.getValue());
         }
 
         else if(this.magicTrick.equalsIgnoreCase("SUB"))
         {
             //write the code to subtract input1 from input2 and store the result in destinationName
+            Register destinationRegister = ARMap.findRegisterByName(this.destinationName);
+            Register input2Register = ARMap.findRegisterByName(theInputNames.get(0));
+            Register input1Register = ARMap.findRegisterByName(theInputNames.get(1));
+            destinationRegister.setValue(input2Register.getValue() - input1Register.getValue());
         }
 
         else if(this.magicTrick.equalsIgnoreCase("ADDI"))
         {
             //write the code to ADD input2 to an immediate value and store the result in destinationName
+            Register destinationRegister = ARMap.findRegisterByName(this.destinationName);
+            Register input2Register = ARMap.findRegisterByName(theInputNames.get(0));
+            int input1Register = Integer.parseInt(theInputNames.get(1));
+            destinationRegister.setValue(input2Register.getValue() + input1Register);
         }
 
         else if(this.magicTrick.equalsIgnoreCase("SUBI"))
         {
             //write the code to subtract an immediate value from input2 and store the result in destinationName
+            Register destinationRegister = ARMap.findRegisterByName(this.destinationName);
+            Register input2Register = ARMap.findRegisterByName(theInputNames.get(0));
+            int input1Register = Integer.parseInt(theInputNames.get(1));
+            destinationRegister.setValue(input2Register.getValue() - input1Register);
         }
     }
 }
