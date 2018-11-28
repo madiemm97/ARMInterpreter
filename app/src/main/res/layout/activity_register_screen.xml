@@ -35,6 +35,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="center"
+                    android:onClick="registerNameTFPressed"
                     android:text="X0" />
 
                 <TextView
@@ -43,6 +44,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="center"
+                    android:onClick="registerNameTFPressed"
                     android:text="X1" />
 
                 <TextView
@@ -51,6 +53,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="center"
+                    android:onClick="registerNameTFPressed"
                     android:text="X2" />
 
                 <TextView
@@ -59,6 +62,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="center"
+                    android:onClick="registerNameTFPressed"
                     android:text="X3" />
 
                 <TextView
@@ -67,6 +71,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="center"
+                    android:onClick="registerNameTFPressed"
                     android:text="X4" />
             </LinearLayout>
 
@@ -145,6 +150,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="center"
+                    android:onClick="registerNameTFPressed"
                     android:text="X5" />
 
                 <TextView
@@ -153,6 +159,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="center"
+                    android:onClick="registerNameTFPressed"
                     android:text="X6" />
 
                 <TextView
@@ -161,6 +168,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="center"
+                    android:onClick="registerNameTFPressed"
                     android:text="X7" />
 
                 <TextView
@@ -169,6 +177,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="center"
+                    android:onClick="registerNameTFPressed"
                     android:text="X8" />
 
                 <TextView
@@ -177,6 +186,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="center"
+                    android:onClick="registerNameTFPressed"
                     android:text="X9" />
             </LinearLayout>
 
@@ -255,6 +265,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="center"
+                    android:onClick="registerNameTFPressed"
                     android:text="X10" />
 
                 <TextView
@@ -263,6 +274,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="center"
+                    android:onClick="registerNameTFPressed"
                     android:text="X11" />
 
                 <TextView
@@ -271,6 +283,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="center"
+                    android:onClick="registerNameTFPressed"
                     android:text="X12" />
 
                 <TextView
@@ -279,6 +292,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="center"
+                    android:onClick="registerNameTFPressed"
                     android:text="X13" />
 
                 <TextView
@@ -287,6 +301,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="center"
+                    android:onClick="registerNameTFPressed"
                     android:text="X14" />
             </LinearLayout>
 
@@ -365,6 +380,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="center"
+                    android:onClick="registerNameTFPressed"
                     android:text="X15" />
 
                 <TextView
@@ -373,6 +389,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="center"
+                    android:onClick="registerNameTFPressed"
                     android:text="X16" />
 
                 <TextView
@@ -381,6 +398,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="center"
+                    android:onClick="registerNameTFPressed"
                     android:text="X17" />
 
                 <TextView
@@ -389,6 +407,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="center"
+                    android:onClick="registerNameTFPressed"
                     android:text="X18" />
 
                 <TextView
@@ -397,6 +416,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="center"
+                    android:onClick="registerNameTFPressed"
                     android:text="X19" />
             </LinearLayout>
 
@@ -475,6 +495,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="center"
+                    android:onClick="registerNameTFPressed"
                     android:text="X20" />
 
                 <TextView
@@ -483,6 +504,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="center"
+                    android:onClick="registerNameTFPressed"
                     android:text="X21" />
 
                 <TextView
@@ -491,6 +513,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="center"
+                    android:onClick="registerNameTFPressed"
                     android:text="X22" />
 
                 <TextView
@@ -499,6 +522,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="center"
+                    android:onClick="registerNameTFPressed"
                     android:text="X23" />
 
                 <TextView
@@ -507,6 +531,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="center"
+                    android:onClick="registerNameTFPressed"
                     android:text="X24" />
             </LinearLayout>
 
@@ -585,6 +610,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="center"
+                    android:onClick="registerNameTFPressed"
                     android:text="X25" />
 
                 <TextView
@@ -593,6 +619,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="center"
+                    android:onClick="registerNameTFPressed"
                     android:text="X26" />
 
                 <TextView
@@ -601,6 +628,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="center"
+                    android:onClick="registerNameTFPressed"
                     android:text="X27" />
 
                 <TextView
@@ -609,6 +637,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="center"
+                    android:onClick="registerNameTFPressed"
                     android:text="X28" />
 
                 <TextView
@@ -617,6 +646,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="center"
+                    android:onClick="registerNameTFPressed"
                     android:text="X29" />
             </LinearLayout>
 
@@ -705,6 +735,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="center"
+                    android:onClick="registerNameTFPressed"
                     android:text="X30" />
 
             </LinearLayout>
@@ -719,6 +750,7 @@
                     android:layout_width="314dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:onClick="saveButtonPressed"
                     android:text="Save" />
 
                 <EditText

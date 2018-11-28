@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">ARMInterpreter</string>
+    <string name="title_activity_register_detail_screen">RegisterDetailScreen</string>
 </resources>
