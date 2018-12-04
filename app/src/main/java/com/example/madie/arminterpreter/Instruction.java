@@ -9,6 +9,8 @@ public class Instruction
 
     public Instruction(String instruction)
     {
+
+        //old code
         instruction = instruction.trim();
         int locationOfFirstSpace = instruction.indexOf(' ');
         this.magicTrick = instruction.substring(0, locationOfFirstSpace);

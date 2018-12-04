@@ -11,10 +11,25 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <LinearLayout
+        <EditText
+            android:id="@+id/instructionET"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight=".1"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Enter ARM Instruction"
+            android:inputType="textPersonName"
+            android:text="ADD X0, X1, X2" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Execute" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:orientation="horizontal">
 
             <Button
@@ -30,34 +45,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:onClick="memoryButtonPressed"
                 android:text="Memory" />
         </LinearLayout>
-
-        <Button
-            android:id="@+id/button5"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight=".1"
-            android:onClick="executeButtonPressed"
-            android:text="Execute" />
-
-        <EditText
-            android:id="@+id/instructionET"
-            android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:layout_weight=".2"
-            android:ems="10"
-            android:gravity="top|left|center"
-            android:hint="Enter ARM Instruction"
-            android:inputType="textMultiLine"
-            android:text="MOVZ X3, 7\nADDI X1,X3,5\nMOVZ X4,13\nADD X0,X3,X4\nSTUR X0,[X1, 5]" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight=".5"
-            android:orientation="vertical"></LinearLayout>
-
     </LinearLayout>
+
 </android.support.constraint.ConstraintLayout>
