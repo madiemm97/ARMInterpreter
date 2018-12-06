@@ -9,14 +9,18 @@ public class Instruction
 
     public Instruction(String instruction)
     {
-
-        //old code
         instruction = instruction.trim();
         int locationOfFirstSpace = instruction.indexOf(' ');
         this.magicTrick = instruction.substring(0, locationOfFirstSpace);
 
         String theRest = instruction.substring(locationOfFirstSpace).trim(); //"X0,[X1, 4]"
         this.parameters = theRest.split(","); // ["X0", "[X1", "4]"]
+
+        //trim the parameters just in case
+        for(int i = 0; i < this.parameters.length; i++)
+        {
+            this.parameters[i] = this.parameters[i].trim();
+        }
     }
 
     public void execute()
