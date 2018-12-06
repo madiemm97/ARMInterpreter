@@ -42,6 +42,8 @@ public class InstructionPickerActivity extends AppCompatActivity
     public void onInstructionButtonPressed(View v)
     {
         int posOfButton = this.indexOfButton((Button)v);
-        System.out.println(ARMap.instructionSyntaxMap[posOfButton]);
+        //System.out.println(ARMap.instructionSyntaxMap[posOfButton]);
+        String newLine = ARMap.instructionSyntaxMap[posOfButton];
+        //concatenate current instructionET with a new line and newLine, which is the string of the new instruction 
     }
 }

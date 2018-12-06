@@ -9,7 +9,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity
 {
-    private EditText instructionET;
+    public EditText instructionET;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -71,5 +71,9 @@ public class MainActivity extends AppCompatActivity
             answer = answer + "\n" + instructions[i];
         }
         this.instructionET.setText(answer);
+    }
+
+    public EditText getInstructionET() {
+        return instructionET;
     }
 }
